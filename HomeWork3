@@ -1,0 +1,79 @@
+Перше завдання.
+
+import java.util.Scanner;
+
+public class HW3{public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+
+    System.out.println("Анкета");
+    System.out.println("Введіть своє ім`я: ");
+    String name = in.nextLine();
+
+    System.out.println("Введіть своє призвище: ");
+    String sn = in.nextLine();
+
+    System.out.println("Введіть свій вік");
+    int age = in.nextInt();
+
+    System.out.println("Анкета");
+    System.out.println("Вас звати - "+name+" "+sn+" Вам "+age+" Років");
+
+  }
+}
+
+
+Друге
+
+import java.util.Scanner;
+
+public class HW3n{
+    public static void main(String[] args) {
+
+            Scanner scan = new Scanner(System.in);
+
+            System.out.print("Введить перше число: ");
+            int a = scan.nextInt(2);
+
+            System.out.print("Введить друге число: ");
+            int b = scan.nextInt(8);
+
+            System.out.print("Введить трете число: ");
+            int c = scan.nextInt(16);
+
+
+            System.out.println("Перше + Друге + Трете = " + (a+b+c));
+    }
+}
+
+Трете
+import java.util.Scanner;
+
+public class HW3t{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter massage: ");
+        String a = scan.nextLine();
+
+        System.out.print("Enter name: ");
+        String b = scan.nextLine();
+
+        String c = a.replace("${name}", b);
+
+        System.out.println(c);
+    }
+}
+
+Четверте
+
+public class HW3ch{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введіть цисло для розрахунку: ");
+        double num = scan.nextDouble();
+        double rozrah = Math.log(Math.sin(num)+Math.exp(num)*(Math.sqrt(num)/Math.PI) );
+        System.out.println(rozrah);
+
+    }
+}
+
