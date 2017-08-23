@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+public class Home3 {
+    public static void main(String[] args) {
+
+
+        //Float, Double:
+        // 1. До какого десятичного знака точно представляется число в float, double?
+        //float до 7 десятичных знаков, а double до 15
+
+        //2. Какой результат 1./0, -1./0, 0./0.? Почему?
+        //Infinity. -Infinity. NaN.
+
+        //3. Вычислить синус 45 градусов. Подсказка: класс Math.
+        double sinus = Math.sin(Math.toRadians(45));
+        System.out.println(sinus);
+
+        //4. Вычислить 45 * 10^30 + 32 * 10^27 (^ - возведение в степень).
+        int x = 10, y = 30, z = 27;
+
+        double a = Math.pow(x,y);
+        double b = Math.pow(x,z);
+        double c = 45 * a + 32 * b;
+        System.out.println(c);
+
+        //5. Почему не компилируется код float f = 1.1? Как исправить ошибку?
+        // другой тип. поменять на dooble.
+
+        //6. В каком типе данных нужно хранить деньги? Почему?
+        //long или decimal - точность.
+        System.out.println("____________________");
+
+        //String:
+        // 1. Как узнать длину строки?
+        String len = "Hello";
+        System.out.println(len.length());
+
+        // 2. Как сравнить 2 строки по содержимому?
+        String a1 = "Hello", a2 = "Hello";
+        boolean a3 =(a1.equals(a2));
+        System.out.println(a3);
+        // 3. Как сравнить 2 строки по содержимому без учета регистра (строчная и заглавная буквы не различаются)?
+        String b1 = "Hello", b2 = "hello";
+        boolean b3 =(a1.equalsIgnoreCase(a2));
+        System.out.println(b3);
+        // 4. Как найти символ по позиции?
+        String s1 = "Hello";
+        System.out.println(s1.charAt(4));
+        // 5. Как найти позицию первого искомого символа?
+        String d1 = "Hello";
+        System.out.println(d1.indexOf("o"));
+
+        System.out.println("____________________");
+
+        //Scanner:
+        // 1. Как создается объект класса Scanner? Что такое System.in?
+        // Для начала Импортируем  java.util. Для создания самого объекта Scanner в его конструктор передается объект System.in.
+
+        // 2. Как с помощью Scanner прочитать примитивы int, long, double?
+        // Scanner in = new Scanner(System.in);
+        // int a = in.nextLine();
+        // long l = in.nextLine();
+        // double b = in.nextLine();
+
+        // 3. Как прочитать с помощью Scanner табличную информацию (формат csv), где разделителем слов является ';'?
+//       Scanner in = new Scanner(System.in);
+//       char n = ';';
+//       String str = in.nextLine();
+//        System.out.println(str + n);
+
+        // 4. Чем отличаются методы next( ) и nextLine( ) класса Scanner?
+        // next(): считывает введенную строку до первого пробела
+        // nextLine(): считывает всю введенную строку
+
+
+        System.out.println("____________________");
+
+        //Пакеты:
+        // 1. Какое предназначение пакетов? Можно ли без них обойтись?
+        //  Пакеты позволяют организовать классы логически в наборы. Нет.
+
+        // 2. Что означает ключевое слово import?
+        // Импорт всех классов из пакета
+
+        // 3. Какие пакеты импортируются по-умолчанию?
+        // Стандартние, ввода, вивода, присвоения
+
+        // 4. Что нужно прописать, чтобы в коде использовать Scanner и пакета java.util?
+        // import java.util.Scanner;
+        // import java.util.*;
+        
+    }
+
+
+}
