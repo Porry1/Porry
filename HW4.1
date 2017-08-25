@@ -1,0 +1,88 @@
+package ua.Porry.HW4;
+
+  //1. Даны числа int a, b. Найти min.
+
+import java.util.Scanner;
+
+public class HW4One{
+    public static void main(String[] args) {
+         
+         // input
+        Scanner str =new Scanner(System.in);
+        System.out.println("Do sum number: ");
+        int a = str.nextInt();
+        System.out.println("Do sum number2: ");
+        int b = str.nextInt();
+        
+        
+        // Output
+        if (a<b ) System.out.println("min number; "+a);
+        if (b<a)System.out.println("min number; "+ b);
+
+    }
+}
+
+package ua.Porry.HW4;
+
+ //3. Даны числа int a, b, c, d. Найти min.
+ 
+ 
+import java.util.Scanner;
+
+public class HW4One{
+    public static void main(String[] args) {
+    
+        // input
+        Scanner str =new Scanner(System.in);
+        System.out.println("Do sum number: ");
+        int a = str.nextInt();
+        System.out.println("Do sum number2: ");
+        int b = str.nextInt();
+        System.out.println("Do sum number3: ");
+        int c = str.nextInt();
+        System.out.println("Do sum number4: ");
+        int d = str.nextInt();
+        
+        // Business Logic
+        int low = a<b ? c : d ;
+        
+        // Output
+        System.out.println("lower number is: "+low);
+      
+
+    }
+}
+
+непонял как сделать без множества строк if і else. подсмотрел решение в интернете
+
+//4. Даны числа int a, b, c. Вывести их в порядке возрастания.
+
+package ua.Porry.HW4;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class HW4One{
+    public static void main(String[] args) {
+
+        // input
+        Scanner str = new Scanner(System.in);
+        System.out.println("Do sum number: ");
+        int a = str.nextInt();
+        System.out.println("Do sum number2: ");
+        int b = str.nextInt();
+        System.out.println("Do sum number3: ");
+        int c = str.nextInt();
+        System.out.println("Do sum number4: ");
+        int d = str.nextInt();
+
+        // Business Logic
+        int[] array = new int[]{a,b,c,d};
+        Arrays.sort(array);
+
+        // Output
+        System.out.println(Arrays.toString(array));
+
+
+    }
+}
