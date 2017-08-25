@@ -1,0 +1,146 @@
+
+//1. Вывести все числа от 10 до 30.
+//@author Porry
+package ua.Porry.HW4;
+
+public class HW4Two{
+    public static void main(String[] args) {
+    
+        // Input
+        
+        int from = 10;
+        int to = 30;
+        
+        //Business Logic
+        
+        while  (from <= to)
+        {
+            System.out.println(from);
+            from++;
+        }
+
+    }
+}
+
+//2. Вывести все числа от 20 до -40.
+//@author Porry
+package ua.Porry.HW4;
+
+public class HW4Two{
+    public static void main(String[] args) {
+        // Input
+        
+        int from = 20;
+        int to = -40;
+        
+        //Business Logic
+        
+        while  (from >= to)
+        {
+            System.out.println(from);
+            from--;
+        }
+
+    }
+}
+
+//3. Вывести все числа от from до to. from <= to.
+//@author Porry
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Two{
+    public static void main(String[] args) {
+    
+        // Input
+        Scanner sca = new Scanner(System.in);
+        System.out.println("do sume number; ");
+        int from =sca.nextInt();
+        System.out.println("do sume number2; ");
+        int to = sca.nextInt();
+        System.out.println("From -  ");
+        
+        //Business Logic
+        
+        while  (from <= to)
+        {
+            System.out.println(from);
+            from++;
+        }
+        // Output
+        System.out.println(" - to  ");
+    }
+    
+  //  4. Вывести все числа от from до to. from, to - любые.
+  //@author Porry
+  package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Two{
+    public static void main(String[] args) {
+    
+        // // Input
+        
+        Scanner sca = new Scanner(System.in);
+
+        System.out.println("do sume number; ");
+        int from = sca.nextInt();
+        System.out.println("do sume number2; ");
+        int to = sca.nextInt();
+        
+        //Business Logic
+
+        if (from <= to) {
+            for (int i = from; i <= to; i++)
+                System.out.println(i);
+        } else {
+            for (int i = from; i >= to; i--)
+                System.out.println(i);
+            
+            }
+        }
+    }
+}
+
+//5. Вывести все четные числа от 1 до 50.
+//@author Porry
+
+package ua.Porry.HW4;
+
+
+
+public class HW4Two{
+    public static void main(String[] args) {
+    
+    //Business Logic
+
+        for (int a=2;a<=50;a=a+2){
+            System.out.println(a);
+        }
+        
+        }
+    }
+    
+    //6. Вывести все нечетные числа от 100 до 70.
+    //@author Porry
+    package ua.Porry.HW4;
+
+
+
+public class HW4Two{
+    public static void main(String[] args) {
+    
+    //Business Logic
+
+        for (int a=99;a>=70;a=a-2){
+            System.out.println(a);
+        }
+
+        }
+    }
+  
+   
+   
+   
