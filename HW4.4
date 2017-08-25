@@ -1,0 +1,201 @@
+ //Task 1* (RangePrinter)
+ //@author Porry
+
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Fore{
+    public static void main(String[] args) {
+    
+    // Input
+    
+        Scanner scr = new Scanner(System.in);
+        System.out.println("do sume numbers:");
+        
+     // Input validation
+        
+        int a = scr.nextInt();
+        System.out.println("do sume numbers2: ");
+        int b = scr.nextInt();
+        
+      // Business Logic
+         
+
+        if (a < b) {
+            for (int c = a; c <= b; c++) {
+                System.out.println(c);
+            }
+        }else for (int c =a;c>=b;c--){
+        
+        //// Output
+        
+            System.out.println(c);
+        }
+    }
+}
+
+//Task 2* (RangeWithStepPrinter)
+//@author Porry
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Fore{
+    public static void main(String[] args) {
+    
+    // Input
+    
+        Scanner scr = new Scanner(System.in);
+        
+        // Input validation
+        
+        System.out.println("do sume numbers:");
+        int first =scr.nextInt();
+        System.out.println("do sume numbers2:");
+        int last = scr.nextInt();
+        System.out.println("do sume numbers3:");
+        int step = scr.nextInt();
+        
+         // Business Logic
+
+        if (first < last) {
+            for (int a = first; first <= last; first += step) {
+                if (step < 0) {
+                    throw new IllegalArgumentException("Step");
+                }
+                System.out.println(first);
+            }
+        } else if (first > last) {
+            for (int a = first; first >= last; first += step) {
+                if (step > 0) {
+                    throw new IllegalArgumentException("Step");
+                }
+                
+                // Output
+                
+                System.out.println(first);
+            }
+        }
+    }
+}
+
+//Task 3* (EvensRangePrinter)
+//@author Porry
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Fore{
+    public static void main(String[] args) {
+    
+    // Input
+    
+        Scanner scr = new Scanner(System.in);
+        
+        // Input validation
+        
+        System.out.println("do sume numbers:");
+        int first = scr.nextInt();
+        System.out.println("do sume numbers2:");
+        int last = scr.nextInt();
+        
+        // Business Logic
+
+        if (first % 2 == 0) {
+            for (int a = first; a <= last; a = a + 2) {
+                System.out.println(a);
+            }
+        } else if (first % 2 != 0) {
+            for (int a = first+1; a <= last; a = a + 2) {
+                System.out.println(a);
+            }
+            
+            // Output
+            
+        } else System.out.println("IllegalArgumentException. ");
+    }
+}
+
+//Task 4* (FactorialCalculator)
+//@author Porry
+
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Fore{
+    public static void main(String[] args) {
+    
+     // Input
+     
+        Scanner scr = new Scanner(System.in);
+        
+        // Input validation
+        
+        System.out.println("do sume numbers:");
+        int n = scr.nextInt();
+        
+        // Business Logic
+
+        if (n >= 1 && n <+20) {
+            long fact = 1;
+            for (int i = 1; i <= n; i++) {
+                fact *= i;
+                System.out.println(fact);
+            }
+        }else if (n < 0 || n > 20) {
+        
+        // // Output
+            System.out.println("IllegalArgumentException ");
+
+        }
+    }
+}
+
+//Task 5* (FilledMatrixPrinter)
+//@author Porry
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Fore{
+    public static void main(String[] args) {
+    
+     // Input
+     
+        Scanner scr = new Scanner(System.in);
+        
+        // Input validation
+        
+        System.out.println("do sume numbers:");
+        int rowsn = scr.nextInt();
+        System.out.println("do sume numbers2:");
+        int cols = scr.nextInt();
+        System.out.println("do sume numbers3:");
+        int filler = scr.nextInt();
+        printFilledMatrix(rowsn, cols, filler);
+    }
+
+     // Business Logic
+     
+    public static void printFilledMatrix(int rowsn, int cols, int filler) {
+        if (rowsn > 0 && cols > 0) {
+            for (int i = 0; i < rowsn; i++) {
+                for (int j = 0; j < cols; j++) {
+                    System.out.print(filler);
+                }
+                System.out.println();
+            }
+        } else if (rowsn < 0 || cols < 0) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+
+
+        }
+    }
+}
