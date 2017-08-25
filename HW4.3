@@ -1,0 +1,155 @@
+
+//Task 1* (MinMaxCalculator
+//@author Porry
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Thre{
+    public static void main(String[] args) {
+    
+    //// Input
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Sum number;");
+        int a = scn.nextInt();
+        System.out.println("Sum number2;");
+        int b = scn.nextInt();
+        
+        //// Business Logic
+
+        if (a<b){
+            System.out.println("max ="+b+"Min= "+a);
+
+        }else {
+            System.out.println("max = "+a+"Min= "+b);
+        }
+        
+
+    }
+}
+
+
+//Task 2* (IsAgeChecker)
+//@author Porry
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Thre{
+    public static void main(String[] args) {
+    
+    // Input
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Sum number;");
+        int age = scn.nextInt();
+        boolean ageChec;
+        
+        // Business Logic
+        
+     if (age >= 1 && age <= 120){
+         ageChec = true;
+     }else ageChec = false;
+        System.out.println(ageChec)
+
+    }
+}
+
+//Task 3* (AgeParser)
+//@author Porry
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Thre{
+    public static void main(String[] args) {
+    
+    // Input
+    
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Sum age");
+        
+         // Business Logic
+
+       String ageString = scn.next();
+       int age = new Integer(ageString);
+       
+      // Output
+       if (age >=1 && age <=120){
+           System.out.println("you are age is " +age);
+       }else System.out.println("IllegalArgumentException");
+
+//Task 4* (IdToToyNameConverter)
+//@author Porry
+    }
+}
+
+package ua.Porry.HW4;
+
+import java.util.Scanner;
+
+public class HW4Thre{
+    public static void main(String[] args) {
+    
+    // Input
+    
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Sum number 0-3 ");
+        
+         // Business Logic
+         
+        int a = scn.nextInt();
+        if (a==0){
+            System.out.println("Car.");
+        }else if (a==1){
+            System.out.println("Lego.");
+        }else if (a==2){
+            System.out.println("Doll.");
+        }else if (a==3){
+            System.out.println("Puzzle.");
+        }else{
+            System.out.println("IllegalArgumentException");
+        }
+
+
+    }
+}
+
+//Task 5* (ToyNameToIdConverter)
+//@author Porry
+package ua.Porry.HW4;
+
+
+import java.util.Scanner;
+
+public class HW4Thre{
+    public static void main(String[] args) {
+    
+     // Input
+     
+        Scanner scn = new Scanner(System.in);
+        System.out.println("read Car or Lego or Doll or Puzzle ");
+        
+         // Business Logic
+
+        String str = scn.next();
+        switch (str){
+            case "Car":
+                System.out.println(0);
+            break;
+            case "Lego":
+                System.out.println(1);
+            case "Doll":
+                System.out.println(2);
+            case "Puzzle":
+                System.out.println(3);
+                default:
+                //// Output
+                    System.out.println("IllegalArgumentException");
+        }
+
+        
+    }
+}
